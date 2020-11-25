@@ -1,0 +1,29 @@
+{
+  "name": "cal_faerun",
+  "title": "The Calendar of Harptos",
+  "description": "An interactive calendar based on the Faerunian Calendar of Harptos.",
+  "author": "uibld",
+  "version": "0.0.0",
+  "minimumCoreVersion": "0.7.6",
+  "compatibleCoreVersion": "0.7.6",
+  "scripts": [
+    "scripts/simple_load.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "system": "dnd5e",
+  "authors": [
+    {
+      "name": "Uibld",
+      "email": "temp@example.com",
+      "url": "https://www.github.com/uibld/cal_faerun"
+    }
+  ],
+  "license": "https://www.github.com/uibld/cal_faerun/LICENSE",
+  "readme": "https://www.github.com/uibld/cal_faerun/README.md"
+}
