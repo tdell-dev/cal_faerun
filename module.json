@@ -3,9 +3,9 @@
   "title": "Calendar of Harptos",
   "description": "An interactive calendar based on the Faerunian Calendar of Harptos.",
   "author": "uibld",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "minimumCoreVersion": "0.7.6",
-  "compatibleCoreVersion": "0.7.6",
+  "compatibleCoreVersion": "0.7.7",
   "scripts": [],
   "esmodules": [
     "scripts/toplevel.js"
