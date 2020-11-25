@@ -6,8 +6,9 @@
   "version": "0.0.0",
   "minimumCoreVersion": "0.7.6",
   "compatibleCoreVersion": "0.7.6",
-  "scripts": [
-    "scripts/simple_load.js"
+  "scripts": [],
+  "esmodules": [
+    "scripts/toplevel.js"
   ],
   "languages": [
     {
