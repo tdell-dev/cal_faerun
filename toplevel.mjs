@@ -9,7 +9,7 @@ export class FCal extends FormApplication {
       return mergeObject( super.defaultOptions, {
         id: "fcal-window",
         title: "Faerunian Calendar of Harptos",
-        template: `${PATH}/templates/cub-puter.html`,
+        template: `${PATH}/templates/faerun-calendar.html`,
         width: 750,
         height: "auto",
         top: 200,
