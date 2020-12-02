@@ -1,4 +1,4 @@
-export const PATH = "modules/combat-utility-belt";
+export const PATH = "modules/cal_faerun";
 export class FCal extends FormApplication {
 
     constructor(object, options={}) {
