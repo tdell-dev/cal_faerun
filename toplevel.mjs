@@ -7,7 +7,7 @@ export class FCal extends FormApplication {
  
     static get defaultOptions() {
       return mergeObject( super.defaultOptions, {
-        id: "fcal",
+        id: "fcal-window",
         title: "Faerunian Calendar of Harptos",
         template: `${PATH}/templates/cub-puter.html`,
         width: 750,
@@ -68,7 +68,7 @@ Hooks.on("renderSettings", (app, html) => {
     console.warn("Faerunian Calendar of Harptos entering renderSettings.");
     //Create the div space in the settings menu
     const fcalDiv = $(
-        `<div id="fcal">
+        `<div id="fcal-settings-button-div">
              <h3>Faerunian Calendar Module Settings</h3>
         </div>`
         );
@@ -82,10 +82,10 @@ Hooks.on("renderSettings", (app, html) => {
 
     //Create the button and place it within the div space
 
-    const FDiv = html.find("#fcal");
+    const FDiv = html.find("#fcal-settings-button-div");
     console.warn("Faerunian Calendar of Harptos found fcalDiv");
     const FCalButton = $(
-        `<button id="fcal-button" data-action="faerun-calendar" title="Faerun Calendar"}">
+        `<button id="fcal-settings-button" data-action="faerun-calendar" title="Faerun Calendar"}">
             <i class="fas fa-desktop"></i> Faerunian Calendar of Harptos
         </button>`);
     console.warn("Faerunian Calendar of Harptos created button");
