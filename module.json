@@ -6,13 +6,11 @@
   "version": "0.0.2",
   "minimumCoreVersion": "0.7.6",
   "compatibleCoreVersion": "0.7.7",
-  "scripts": [
-    "scripts/settings.js",
-    "scripts/fcal.js",
-    "scripts/util.js"
-  ],
+  "url": "https://github.com/uibld/cal_faerun",
+  "readme": "https://raw.githubusercontent.com/uibld/cal_faerun/main/README.md",
+  "scripts": [],
   "esmodules": [
-    "scripts/toplevel.js"
+    "./toplevel.js"
   ],
   "languages": [
     {
@@ -30,6 +28,5 @@
     }
   ],
   "license": "https://raw.githubusercontent.com/uibld/cal_faerun/main/LICENSE",
-  "readme": "https://raw.githubusercontent.com/uibld/cal_faerun/main/README.md",
   "download": "https://github.com/uibld/cal_faerun/archive/0.0.2.zip"
 }

@@ -1,20 +1,16 @@
-import { FCalendar } from "./fcal.js";
-import { Util } from "./util.js";
+import * as BUTLER from "./butler.js";
+import { FCal } from "./fcal.js";
+import { Sidekick } from "./sidekick.js";
 
 export function registerSettings() {
-  cal_menu = {
-    menu: "Faerun Calendar",
-    config: "Faerun Calendar Config"
-  }
 
-  Helper.registerMenu(
-    cal_menu,
-    {
-     name:"SETTINGS.FaerunCalendar.ButtonN",
-     label:"Calendar of Harptos",
-     hint:"SETTINGS.FaerunCalendar.ButtonH",
-     icon:"fas fa-desktop",
-     type:FCalendar,
-     restricted: true
-  });
+    Sidekick.registerMenu(BUTLER.SETTING_KEYS.fCal.menu, {
+        name:"SETTINGS.FaerunCalendar.ButtonN",
+        label: BUTLER.DEFAULT_CONFIG.fCal.title,
+        hint:"SETTINGS.FaerunCalendar.ButtonH",
+        icon:"fas fa-desktop",
+        type:FCal,
+        restricted: true
+    });
+
 }
