@@ -1,3 +1,4 @@
+
 export class FCal extends FormApplication {
 
     constructor(object, options={}) {
@@ -25,7 +26,7 @@ export class FCal extends FormApplication {
         return {
             moduleVersion,
             username
-        }
+        };
     }
 
     /**
@@ -33,7 +34,7 @@ export class FCal extends FormApplication {
      */
     _getHeaderButtons() {
         let buttons = super._getHeaderButtons();
-        return buttons
+        return buttons;
     }
 
     /**
@@ -56,6 +57,7 @@ export class FCal extends FormApplication {
 
 
 Hooks.on("init", () => {
+    console.log("Hello World! This is Faerunian Calendar of Harptos reporting.  Just checking that the file is loaded.");
 });
 
 Hooks.on("canvasInit", () => {
@@ -65,6 +67,7 @@ Hooks.on("ready", () => {
 });
 
 Hooks.on("renderSettings", (app, html) => {
+    console.log("Faerunian Calendar of Harptos entering renderSettings.");
     //Create the div space in the settings menu
     const fcalDiv = $(
         `<div id="fcal">
@@ -72,17 +75,25 @@ Hooks.on("renderSettings", (app, html) => {
         </div>`
         );
 
+    console.log("Faerunian Calendar of Harptos created fcalDiv");
+
     const setupButton = html.find("button[data-action='setup']");
+    console.log("Faerunian Calendar of Harptos found setup button");
     setupButton.after(fcalDiv);
+    console.log("Faerunian Calendar of Harptos placed fcalDiv");
 
     //Create the button and place it within the div space
 
     const FDiv = html.find("#fcal");
+    console.log("Faerunian Calendar of Harptos found fcalDiv");
     const FCalButton = $(
         `<button id="fcal-button" data-action="faerun-calendar" title="Faerun Calendar"}">
             <i class="fas fa-desktop"></i> Faerunian Calendar of Harptos
-        </button>`
+        </button>`);
+    console.log("Faerunian Calendar of Harptos created button");
     FDiv.append(FCalButton);
+    console.log("Faerunian Calendar of Harptos appended button");
     FCalButton.on("click", event => new FCal().render(true));
+    console.log("Faerunian Calendar of Harptos registered button click callback");
 });
 

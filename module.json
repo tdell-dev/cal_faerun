@@ -10,7 +10,7 @@
   "readme": "https://raw.githubusercontent.com/uibld/cal_faerun/main/README.md",
   "author": "uibld",
   "esmodules": [
-    "./toplevel.js"
+    "./toplevel.mjs"
   ],
   "languages": [
     {
