@@ -1,4 +1,3 @@
-
 export class FCal extends FormApplication {
 
     constructor(object, options={}) {
@@ -9,7 +8,7 @@ export class FCal extends FormApplication {
       return mergeObject( super.defaultOptions, {
         id: "fcal",
         title: "Faerunian Calendar of Harptos",
-        template:`./templates/faerun-calendar.html`
+        template:"./templates/faerun-calendar.html",
         width: 750,
         height: "auto",
         top: 200,
@@ -21,10 +20,8 @@ export class FCal extends FormApplication {
     }
 
     getData() {
-        const moduleVersion = game.modules.get(NAME)?.data?.version;
         const username = game.user.name;
         return {
-            moduleVersion,
             username
         };
     }
@@ -57,7 +54,7 @@ export class FCal extends FormApplication {
 
 
 Hooks.on("init", () => {
-    console.log("Hello World! This is Faerunian Calendar of Harptos reporting.  Just checking that the file is loaded.");
+    console.warn("Hello World! This is Faerunian Calendar of Harptos reporting.  Just checking that the file is loaded.");
 });
 
 Hooks.on("canvasInit", () => {
@@ -67,7 +64,7 @@ Hooks.on("ready", () => {
 });
 
 Hooks.on("renderSettings", (app, html) => {
-    console.log("Faerunian Calendar of Harptos entering renderSettings.");
+    console.warn("Faerunian Calendar of Harptos entering renderSettings.");
     //Create the div space in the settings menu
     const fcalDiv = $(
         `<div id="fcal">
@@ -75,25 +72,25 @@ Hooks.on("renderSettings", (app, html) => {
         </div>`
         );
 
-    console.log("Faerunian Calendar of Harptos created fcalDiv");
+    console.warn("Faerunian Calendar of Harptos created fcalDiv");
 
     const setupButton = html.find("button[data-action='setup']");
-    console.log("Faerunian Calendar of Harptos found setup button");
+    console.warn("Faerunian Calendar of Harptos found setup button");
     setupButton.after(fcalDiv);
-    console.log("Faerunian Calendar of Harptos placed fcalDiv");
+    console.warn("Faerunian Calendar of Harptos placed fcalDiv");
 
     //Create the button and place it within the div space
 
     const FDiv = html.find("#fcal");
-    console.log("Faerunian Calendar of Harptos found fcalDiv");
+    console.warn("Faerunian Calendar of Harptos found fcalDiv");
     const FCalButton = $(
         `<button id="fcal-button" data-action="faerun-calendar" title="Faerun Calendar"}">
             <i class="fas fa-desktop"></i> Faerunian Calendar of Harptos
         </button>`);
-    console.log("Faerunian Calendar of Harptos created button");
+    console.warn("Faerunian Calendar of Harptos created button");
     FDiv.append(FCalButton);
-    console.log("Faerunian Calendar of Harptos appended button");
+    console.warn("Faerunian Calendar of Harptos appended button");
     FCalButton.on("click", event => new FCal().render(true));
-    console.log("Faerunian Calendar of Harptos registered button click callback");
+    console.warn("Faerunian Calendar of Harptos registered button click callback");
 });
 
