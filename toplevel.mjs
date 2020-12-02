@@ -1,3 +1,4 @@
+export const PATH = "modules/combat-utility-belt";
 export class FCal extends FormApplication {
 
     constructor(object, options={}) {
@@ -8,7 +9,7 @@ export class FCal extends FormApplication {
       return mergeObject( super.defaultOptions, {
         id: "fcal",
         title: "Faerunian Calendar of Harptos",
-        template:"./templates/faerun-calendar.html",
+        template: `${PATH}/templates/cub-puter.html`,
         width: 750,
         height: "auto",
         top: 200,
@@ -90,6 +91,7 @@ Hooks.on("renderSettings", (app, html) => {
     console.warn("Faerunian Calendar of Harptos created button");
     FDiv.append(FCalButton);
     console.warn("Faerunian Calendar of Harptos appended button");
+
     FCalButton.on("click", event => new FCal().render(true));
     console.warn("Faerunian Calendar of Harptos registered button click callback");
 });
