@@ -20,6 +20,9 @@
     }
   ],
   "system": "dnd5e",
+  "styles": [
+    "./styles/faerun_calendar.css"
+  ],
   "license": "https://raw.githubusercontent.com/uibld/cal_faerun/main/LICENSE",
   "download": "https://github.com/uibld/cal_faerun/archive/0.0.0.zip"
 }
