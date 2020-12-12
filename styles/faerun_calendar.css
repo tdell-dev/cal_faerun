@@ -1,0 +1,21 @@
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width=2000px;
+  height: 800px;
+  background-color: white;
+}
+
+.tenday {
+  width: 2000px;
+  height: 200px;
+  background-color: black;
+}
+
+.tenday div {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
