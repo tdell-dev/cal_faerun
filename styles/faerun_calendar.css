@@ -1,21 +1,100 @@
-.calendar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width=2000px;
-  height: 800px;
-  background-color: white;
+.grid-container {
+	  display: grid;
+	  grid-template-columns: repeat(10, 1fr);
+	  grid-template-rows: repeat(4, 1fr);
+	  grid-gap:10px;
+  }
+
+#FCheader {
+	display:block;
+	width: 100%;
+	height: 100px;
+	font-family:"Modesto Condensed";
 }
 
-.tenday {
-  width: 2000px;
-  height: 200px;
-  background-color: black;
+.grid-item {
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	overflow: hidden;
+	border-bottom:1px solid black;
+	border-right: 1px solid black;
+	box-shadow: 3px 3px grey;
 }
 
-.tenday div {
-  width: 200px;
-  height: 200px;
-  background-color: white;
+.holiday {
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	overflow: hidden;
+	border-bottom:1px solid black;
+	border-right: 1px solid black;
 }
 
+.empty {
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	overflow: hidden;
+}
+
+.grid-item-save {
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	background-color: white;
+	border-radius: 3px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.month-container {
+	display:block;
+	text-align:center;
+	font-family:"Modesto Condensed";
+	font-size:200%;
+}
+
+.month-button-container {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap=4px;
+}
+
+.day-button-container {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+}
+
+
+.left-but-container {
+	text-align:right;
+	padding-right:3px;
+}
+
+.right-but-container {
+	text-align:left;
+	padding-left:3px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+//end base
+
+.card {
+	display: block;
+	width: 18rem;
+	height: 20rem;
+	margin: 0 auto;
+}

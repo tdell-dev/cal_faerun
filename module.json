@@ -2,13 +2,13 @@
   "name": "cal_faerun",
   "title": "Faerunian Calendar",
   "description": "An interactive calendar based on the Faerunian Calendar of Harptos.",
-  "author": "uibld",
+  "author": "uiblr",
   "version": "0.0.0",
   "minimumCoreVersion": "0.7.6",
   "compatibleCoreVersion": "0.7.7",
-  "url": "https://github.com/uibld/cal_faerun",
-  "readme": "https://raw.githubusercontent.com/uibld/cal_faerun/main/README.md",
-  "author": "uibld",
+  "url": "https://github.com/uiblr/cal_faerun",
+  "readme": "https://raw.githubusercontent.com/uiblr/cal_faerun/main/README.md",
+  "author": "uiblr",
   "esmodules": [
     "./toplevel.mjs"
   ],
@@ -23,6 +23,6 @@
   "styles": [
     "./styles/faerun_calendar.css"
   ],
-  "license": "https://raw.githubusercontent.com/uibld/cal_faerun/main/LICENSE",
-  "download": "https://github.com/uibld/cal_faerun/archive/0.0.1.zip"
+  "license": "https://raw.githubusercontent.com/uiblr/cal_faerun/main/LICENSE",
+  "download": "https://github.com/uiblr/cal_faerun/archive/0.0.1.zip"
 }

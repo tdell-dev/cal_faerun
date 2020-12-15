@@ -10,12 +10,12 @@ export class FCal extends FormApplication {
         id: "fcal-window",
         title: "Faerunian Calendar of Harptos",
         template: `${PATH}/templates/faerun-calendar.html`,
-        width: 750,
-        height: "auto",
-        top: 200,
-        left: 400,
+        width: 1200,
+        height: 400,//"auto",
+        top: 0,//200,
+        left: 0,//400,
         background: "#000",
-        resizable: true,
+        resizable: false,
         closeOnSubmit: false
       });
     }
