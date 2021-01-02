@@ -1,4 +1,5 @@
 export const PATH = "modules/cal_faerun";
+
 export class FCal extends FormApplication {
 
     constructor(object, options={}) {
@@ -11,9 +12,9 @@ export class FCal extends FormApplication {
         title: "Faerunian Calendar of Harptos",
         template: `${PATH}/templates/faerun-calendar.html`,
         width: 1200,
-        height: 400,//"auto",
-        top: 0,//200,
-        left: 0,//400,
+        height: 400,
+        top: 0,
+        left: 0,
         background: "#000",
         resizable: false,
         closeOnSubmit: false
@@ -21,10 +22,6 @@ export class FCal extends FormApplication {
     }
 
     getData() {
-        const username = game.user.name;
-        return {
-            username
-        };
     }
 
     /**
@@ -65,7 +62,9 @@ Hooks.on("ready", () => {
 });
 
 Hooks.on("renderSettings", (app, html) => {
+    //kick off the hooks with a notification that it's getting loaded
     console.warn("Faerunian Calendar of Harptos entering renderSettings.");
+
     //Create the div space in the settings menu
     const fcalDiv = $(
         `<div id="fcal-settings-button-div">
@@ -81,7 +80,6 @@ Hooks.on("renderSettings", (app, html) => {
     console.warn("Faerunian Calendar of Harptos placed fcalDiv");
 
     //Create the button and place it within the div space
-
     const FDiv = html.find("#fcal-settings-button-div");
     console.warn("Faerunian Calendar of Harptos found fcalDiv");
     const FCalButton = $(
@@ -92,6 +90,10 @@ Hooks.on("renderSettings", (app, html) => {
     FDiv.append(FCalButton);
     console.warn("Faerunian Calendar of Harptos appended button");
 
+    const monthsPath = `${PATH}/months_and_holidays.json`;
+    fetch(monthsPath).then(response => response.json()).then(jsonResponse => console.warn(jsonResponse));
+
+    //Add the click event to render the FCal object
     FCalButton.on("click", event => new FCal().render(true));
     console.warn("Faerunian Calendar of Harptos registered button click callback");
 });

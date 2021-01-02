@@ -2,72 +2,84 @@
 	"title":"Faerunian Calendar of Harptos",
 	"months": [
 			{
+				"idx": 0,
 				"Hammer": {
 					"holiday": ["Midwinter"],
 					"desc": "Deep Winter"
 				}
 			},
 			{
+				"idx": 1,
 				"Acturial": {
 					"holiday": ["Midwinter"],
 					"desc": "The Claws of the Cold"
 				}
 			},
 			{
+				"idx": 2,
 				"Ches": {
 					"holiday":[],
 					"desc":""
 				}
 			},
 			{
+				"idx": 3,
 				"Tarsakh": {
 					"holiday":["Greengrass"],
 					"desc":"The Claw of Sunsets"
 				}
 			},
 			{
+				"idx": 4,
 				"Mirtul": {
 					"holiday":[],
 					"desc":"The Melting"
 				}
 			},
 			{
+				"idx": 5,
 				"Kythorn": {
 					"holiday":[],
 					"desc":"The Time of Flowers"
 				}
 			},
 			{
+				"idx": 6,
 				"Flamerule": {
 					"holiday":["Midsummer", "Shieldmeet"],
 					"desc":"Summertide"
 				}
 			},
 			{
+				"idx": 7,
 				"Eleasis": {
 					"holiday":[],
 					"desc":"Highsun"
 				}
 			},
 			{
+				"idx": 8,
 				"Eleint": {
 					"holiday":["Highharvestide"],
 					"desc":"The Fading"
 				}
 			},
 			{
+				"idx": 9,
 				"Marpenoth": {
 					"holiday":[],
 					"desc":"Leaffall"
 				}
 			},
 			{
+				"idx": 10,
 				"Uktar": {
 					"holiday":["Feast of the Moon"],
 					"desc":"The Rotting"
 				}
 			},
 			{
+				"idx": 11,
 				"Nightal": {
 					"holiday":[],
 					"desc":"The Drawing Down"
